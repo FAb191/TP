@@ -1,0 +1,17 @@
+<workflow-app name="hive-wf" xmlns="uri:oozie:workflow:0.1">
+
+        <start to="hiveScript"/>
+
+        <action name="hiveScript">
+        <hive xmlns="uri:oozie:hive-action:0.2">
+            <job-tracker>${yarnNode}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <script>/user/raj_ops/TP3/oozie/oozieScript.hql</script>
+        </hive>
+        <ok to="end"/>
+        <error to="end"/>
+    </action>
+
+    <end name="end"/>
+
+</workflow-app>
