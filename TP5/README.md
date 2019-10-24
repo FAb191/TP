@@ -104,6 +104,11 @@ Je vous en ai déjà trop donné :)
 
 ## Un peu d'aide si vous ne trouvez vraiment pas
 
+<details><summary>Je jure que j'ai essayé mais j'ai vraiment besoin d'aide</summary>
+<p>
+
+#### Pour démarrer
+
 ```java
 Configuration config = HBaseConfiguration.create();
 
@@ -126,3 +131,5 @@ try (final Connection conn = ConnectionFactory.createConnection(config)){
     throw new RuntimeException("Erreur lors de la lecture du csv et insertion dans HBase: ", e);
 }
 ```
+</p>
+</details>
