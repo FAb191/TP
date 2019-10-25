@@ -1,6 +1,7 @@
 # TP HBase
 
 Vérifiez d'abord que HBase est démarré (sinon démarrez la machine !)
+Movie Dataset: http://files.grouplens.org/datasets/movielens/ml-latest-small.zip
 
 ## Exercice 1:
 Essayez déjà de démarrer hbase shell, et lancez quelques commandes basiques: création namespace, table, insertions, scan avec limite
